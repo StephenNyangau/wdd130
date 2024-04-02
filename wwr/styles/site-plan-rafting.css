@@ -1,6 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital=swap');
+:root {
+  --primary-color: #27307c;
+  --secondary-color: #4a6d59;
+  --accent1-color: #bdb6b2;
+  --accent2-color: #ffffff;
+
+  --heading-font: 'roboto', serif;
+  --paragraph-font: 'sans', serif;
+
+  --nav-background-color: #27307c;
+  --nav-link-color: #4a6d59;
+  --nav-hover-link-color: #bdb6b2;
+  --nav-hover-background-color: #ffffff;
+}
+
 body {
-    font-family: var(--paragraph-font);
+    font-family: var('sans', serif);
     max-width: 960px;
     padding: 20px;
   }
+          
+h1, h2, h3, h4, h5, h6 {
+  font-family: var('roboto', serif);
+  color: var(#27307c);
+}
+
+header {
+  padding: 20px;
+  background-color: var(#bdb6b2);
+}
+p {
+  padding: 25px;
+}
+nav {
+  background-color: var(#bdb6b2);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(#4a6d59);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(#4a6d59);
+}
+
+nav a:hover {
+  color: var(#bdb6b2);
+  background-color: var(#ffffff);
+}
